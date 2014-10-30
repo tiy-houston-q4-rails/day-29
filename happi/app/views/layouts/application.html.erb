@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Happi</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="//jashkenas.github.io/underscore/underscore-min.js"></script>
+  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag "application" %>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
 </head>
 <body>
 
-<%= yield %>
+  <h1>Welcome to NY</h1>
+
+  <article>
+    <button>Load the things</button>
+
+  </article>
+
+
+
+  <script type="text/template" class="template">
+
+  {{ _.each(people, function(person){ }}
+    <h1>{{= person.name }}</h1>
+    <img src="{{= person.photoUrl }}"/>
+    {{= person.githubUsername }}
+  {{ }); }}
+
+  </script>
+
+  <div id="ajax-loader">
+    <%= image_tag "ajax-loader.gif" %>
+  </div>
 
 </body>
 </html>

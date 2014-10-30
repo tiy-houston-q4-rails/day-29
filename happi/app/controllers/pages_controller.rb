@@ -2,6 +2,10 @@ class PagesController < ApplicationController
   def people
     @people = Person.all
 
-    render json: {people: @people }
+    sleep 2
+    render json: @people, root: "people"
+  end
+
+  def index
   end
 end
