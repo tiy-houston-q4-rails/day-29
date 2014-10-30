@@ -3,6 +3,7 @@ Week 6 - Lab: Github Profile API
 
 Create the image below, from the GitHub API
 
+![githubpng](github.png)
 
 Requirements:
 
